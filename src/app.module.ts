@@ -7,6 +7,9 @@ import { LivrosController } from './livros/livros.controller.js';
 import { LivrosService } from './livros/livros.service.js';
 import { MediaController } from './media/media.controller.js';
 import { SegurancaController } from './seguranca/seguranca.controller.js';
+import { ProdutosController } from './produtos/produtos.controller.js';
+import { ProdutosService } from './produtos/produtos.service.js';
+import { ColaboradoresController } from './colaboradores/colaboradores.controller.js';
 
 @Module({
 imports: [],
@@ -15,7 +18,9 @@ controllers: [AppController,
     LivrosController, 
     MediaController,
     SegurancaController,
+    ProdutosController,
+    ColaboradoresController,
 ],
-providers: [AppService, ConvidadosService, LivrosService],
+providers: [AppService, ConvidadosService, LivrosService, ProdutosService],
 })
 export class AppModule {}
